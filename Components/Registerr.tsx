@@ -2,9 +2,17 @@
 
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-
+import Link from "next/link"
 export default function Registerr() {
   return (
+<div>
+     <div >
+    
+              <Link href="/Home">
+        <Button variant="default" className="bg-[#002147] text-[#D6DAC8] hover:bg-[#002147] hover:text-[#9CAFAA] rotate-180 text-[40px] ml-[30px] mt-[15px]">  →   </Button>
+              </Link>
+              </div>
+
     <div className="min-h-screen flex items-center justify-center bg-[#002147] px-4 max-md:scale-75">
       <div className="bg-[#D6DAC8] p-8 rounded-t-[250px] shadow-lg w-full max-w-md text-[#002147] h-[600px]">
         <h2 className="text-2xl font-bold mb-6 text-center mt-[30px] text-[#002147]">Join To The World</h2>
@@ -38,6 +46,7 @@ export default function Registerr() {
           <a href="/Login" className="text-[#002147] hover:underline ml-1">Login</a>
         </p>
       </div>
+    </div>
     </div>
   )
 }

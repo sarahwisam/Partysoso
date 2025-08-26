@@ -17,6 +17,7 @@ const steps = [
     icon: <CreditCard className="w-12 h-12 text-[#D6DAC8]" />,
     title: "Secure Your Booking",
     description: "Book instantly with our safe and secure payment system.",
+    
   },
   {
     icon: <PartyPopper className="w-12 h-12 text-[#D6DAC8]" />,
@@ -39,7 +40,7 @@ export default function HowItWork() {
           {steps.map((step, index) => (
             <div key={index} className="min-w-[240px] md:min-w-0 snap-center flex">
               <Card 
-                className="max-md:scal-50 bg-[#002147] border border-[#9CAFAA] rounded-t-[200px] shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+                className="max-md:scal-50 bg-[#002147] border border-[#9CAFAA] md:rounded-t-[200px] max-md:rounded-t-[100px] shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
                 <CardHeader>
                   <div className="mx-auto flex items-center justify-center w-10 h-10 bg-[#D6DAC8] text-[#002147] rounded-full font-bold text-lg">

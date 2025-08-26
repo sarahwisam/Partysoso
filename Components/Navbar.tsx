@@ -4,11 +4,11 @@ import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   return (
-    <header className="bg-[#] h-[60px] px-6 md:px-16 flex items-center justify-between">
+    <header className="bg-[#002147] h-[60px] px-6 md:px-16 flex items-center justify-between">
       
  
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-[#D6DAC8] flex items-center justify-center md:-ml-[330px] -ml-[170px] max-md:-ml-[50px]">
+              <div className="w-12 h-12 rounded-full bg-[#D6DAC8] flex items-center justify-center ml-[85px] max-md:-ml-[10px] max-md:w-10 max-md:h-10">
                 <span className="font-semibold text-[#002147]">V</span>
               </div>
               <div>
@@ -19,7 +19,7 @@ export default function Navbar() {
        
      <Dropdown/>
      
-      <nav className="hidden md:flex gap-8 text-[#F5F5DC] text-base font-medium -ml-[250px]">
+      <nav className="hidden md:flex gap-8 text-[#F5F5DC] text-base font-medium -ml-[200px]">
         <Link href="/Home" className="hover:text-[#9CAFAA] transition-colors">Home</Link>
         <Link href="/Filters" className="hover:text-[#9CAFAA] transition-colors">Halls</Link>
         <Link href="/Packages" className="hover:text-[#9CAFAA] transition-colors">Packages</Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
       <Link href="/Register">
       <Button
         variant="outline"
-        className="bg-[#D6DAC8] text-[#002147] hover:bg-[#9CAFAA] transition-colors hidden md:block"
+        className="bg-[#D6DAC8] text-[#002147] hover:bg-[#9CAFAA] transition-colors hidden md:block -ml-[160px]"
       >
         Sign Up
       </Button>

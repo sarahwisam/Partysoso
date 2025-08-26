@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#002147] text-[#f5f0e6] px-[132px] py-20 max-md:-mt-[230px] ">
+    <footer className="bg-[#002147] text-[#f5f0e6] px-[132px] py-20 max-md:-mt-[230px] mx-auto">
     
       <div className="max-md:scale-75 max-md:w-[430px] max-md:h-[750px] max-md:-ml-[162px] border border-[#D6DAC8] bg-[#D6DAC8] rounded-xl md:rounded-tl-[200px] md:rounded-br-[200px] md:rounded-tr-[20px] md:rounded-bl-[20px]">
       <div className="max-w-7xl mx-auto px-6 md:px-20 py-12 md:py-16">
@@ -54,7 +54,7 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3 text-sm text-[#dbe7ee]/90">
                 <li><a className="text-[#002147] hover:underline transition" href="#">Home</a></li>
-                <li><a className="text-[#002147] hover:underline transition" href="#">Venues</a></li>
+                <li><a className="text-[#002147] hover:underline transition" href="#">Halls</a></li>
                 <li><a className="text-[#002147] hover:underline transition" href="#">Packages</a></li>
                 <li><a className="text-[#002147] hover:underline transition" href="#">Booking</a></li>
               </ul>

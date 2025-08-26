@@ -1,10 +1,20 @@
 'use client'
-
+import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
 export default function Loginn() {
   return (
+    <div>
+ 
+    <div >
+    
+              <Link href="/Home">
+        <Button variant="default" className="bg-[#002147] text-[#D6DAC8] hover:bg-[#002147] hover:text-[#9CAFAA] rotate-180 text-[40px] ml-[30px] mt-[15px]">  →   </Button>
+              </Link>
+              </div>
+
+
     <div className="min-h-screen flex items-center justify-center bg-[#002147] px-4 max-md:scale-75">
       <div className="bg-[#D6DAC8] p-8 rounded-t-[250px] shadow-lg w-full max-w-md text-[#002147] h-[500px]">
         <h2 className="text-2xl font-bold mb-6 text-center mt-[100px] text-[#002147]">Welcome back</h2>
@@ -27,6 +37,9 @@ export default function Loginn() {
           <a href="/Register" className="text-[#002147] hover:underline ml-1">Register</a>
         </p>
       </div>
+  
     </div>
+   
+              </div>
   )
 }

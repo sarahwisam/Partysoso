@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function CTA() {
   return (
@@ -14,9 +15,11 @@ export default function CTA() {
           <p className="text-lg text-[#002147] mb-6 max-md:text-[18px]">
             Discover premium halls for weddings, conferences, and events — all ready for your special day.
           </p>
+          <Link href="Booking?type=halls&id=1">
           <Button className="max-md:w-[200px]  max-md:-ml-[5px] bg-[#002147] text-[#D6DAC8] hover:bg-[#3B4C6B] px-6 py-3 text-lg rounded-lg transition-all duration-300 w-[300px] ml-[120px]">
             Book Now
           </Button>
+          </Link>
         </div>
 
         <div className="max-md:rounded-b-[210px] max-md:w-[430px] max-md:h-[400px] max-md:-mt-[5px] bg-white border border-[#D6DAC8] shadow-md overflow-hidden h-[460px] md:rounded-r-[400px] mt-[300px]">

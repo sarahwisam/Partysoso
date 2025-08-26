@@ -91,7 +91,7 @@ const venues = [
         </p>
       </section>
    
-      <div className="max-md:mt-[200px] bg-[#D6DAC8] border border-[#D6DAC8] rounded-t-[700px] p-6 grid grid-cols-1 md:grid-cols-6 gap-4 items-end mb-8 max-md:scale-75 max-md:h-[400px]">
+      <div className="max-md:mt-[200px] bg-[#D6DAC8] border border-[#D6DAC8] rounded-t-[200px] p-6 grid grid-cols-1 md:grid-cols-6 gap-4 items-end mb-8 max-md:scale-75 max-md:h-[400px]">
         <Input placeholder="Search venues..." className="md:col-span-2 bg-[#002147] text-[#D6DAC8] w-[333px] ml-[55px]  max-md:w-[180px]" />
 
         <Select>
