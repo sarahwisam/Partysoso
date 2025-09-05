@@ -19,7 +19,7 @@ export default function Navbar() {
        
      <Dropdown/>
      
-      <nav className="hidden md:flex gap-8 text-[#F5F5DC] text-base font-medium -ml-[200px]">
+      <nav className=" hidden lg:block hidden lg:flex gap-8 text-[#F5F5DC] text-base font-medium -ml-[200px]">
         <Link href="/Home" className="hover:text-[#9CAFAA] transition-colors">Home</Link>
         <Link href="/Filters" className="hover:text-[#9CAFAA] transition-colors">Halls</Link>
         <Link href="/Packages" className="hover:text-[#9CAFAA] transition-colors">Packages</Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
       <Link href="/Register">
       <Button
         variant="outline"
-        className="bg-[#D6DAC8] text-[#002147] hover:bg-[#9CAFAA] transition-colors hidden md:block -ml-[160px]"
+        className="bg-[#D6DAC8] text-[#002147] hover:bg-[#9CAFAA] transition-colors hidden lg:block -ml-[160px]"
       >
         Sign Up
       </Button>

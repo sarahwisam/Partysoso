@@ -6,17 +6,18 @@ import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
+import { useState } from "react";
 export default function Footer() {
+  const [email ,setEmail]= useState("");
   return (
-    <footer className="bg-[#002147] text-[#f5f0e6] px-[132px] py-20 max-md:-mt-[230px] mx-auto">
+    <footer className="bg-[#002147] text-[#f5f0e6] md:px-[132px] lg:px-[132px] py-20 max-md:-mt-[230px] mx-auto">
     
-      <div className="max-md:scale-75 max-md:w-[430px] max-md:h-[750px] max-md:-ml-[162px] border border-[#D6DAC8] bg-[#D6DAC8] rounded-xl md:rounded-tl-[200px] md:rounded-br-[200px] md:rounded-tr-[20px] md:rounded-bl-[20px]">
-      <div className="max-w-7xl mx-auto px-6 md:px-20 py-12 md:py-16">
-        <div className="max-md:w-[200px] grid grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+      <div className="max-md:scale-75 max-md:h-[750px] sm:mx-auto border border-[#D6DAC8] bg-[#D6DAC8] rounded-xl lg:rounded-tl-[200px] lg:rounded-br-[200px] lg:rounded-tr-[20px] lg:rounded-bl-[20px]">
+      <div className="max-w-7xl mx-auto px-6 md:px-20 py-12 md:py-16 ">
+        <div className=" grid grid-cols-1 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start mx-auto">
          
-          <div className="space-y-4 max-md:w-[250px]">
-            <div className="flex items-center gap-3">
+          <div className="space-y-4 ">
+            <div className="flex items-center gap-3 max-md:w-[250px]">
               <div className="w-12 h-12 rounded-full bg-[#002147] flex items-center justify-center">
                 <span className="font-semibold text-[#D6DAC8]">V</span>
               </div>
@@ -47,7 +48,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row md:gap-8 max-md:ml-[170px]">
+          <div className="flex flex-col md:flex-row md:gap-8 sm:gap-8 max-md:ml-[80px]  lg:gap-4">
             <div className="min-w-[140px]">
               <h4 className="text-sm font-bold text-[#002147] mb-4">
                 Quick Links
@@ -72,31 +73,67 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="bg-[#002147] border border-[#d4af37] rounded-xl p-6 max-md:w-[385px] max-md:-ml-[3px]">
+          <div className="bg-[#002147] border border-[#d4af37] rounded-xl p-6 max-md:w-[370px] max-md:-ml-[3px] ">
             <h4 className="text-lg font-semibold text-[#D6DAC8]">Subscribe to our newsletter</h4>
             <p className="text-sm text-[#D6DAC8]/80 mt-2 mb-4">
               Get venue deals, event tips and exclusive offers — straight to your inbox.
             </p>
 
-            <form className="flex flex-col sm:flex-row gap-3">
-              <div className="flex-1">
-                <Label className="sr-only">Email address</Label>
-<Input
-                  placeholder="Your email"
-                  className="bg-[#082033] text-[#D6DAC8] placeholder:text-[#D6DAC8]"
-                />
-              </div>
-              <div>
-                <Button
-                  type="button"
-                  className="h-12 bg-[#D6DAC8] text-[#002147] h-[40px] w-[109px] hover:bg-[#9CAFAA]">
-                
-                
-                  <Mail className="mr-2 w-4 h-4" /> Subscribe
-                  </Button>
-              </div>
-              
-            </form>
+<form
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+
+    const handleSubmit = async () => {
+      if (!email) {
+        alert("Please enter a valid email");
+        return;
+      }
+
+      try {
+        const res = await fetch("http://localhost:5000/subscriptions", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        if (res.ok) {
+          alert("✅ Subscribed successfully!");
+          setEmail("");
+        } else {
+          alert("❌ Failed to subscribe. Try again.");
+        }
+      } catch (err) {
+        alert("⚠️ Error while subscribing!");
+      }
+    };
+
+    handleSubmit();
+  }}
+  className="flex flex-col sm:flex-row gap-3"
+>
+  <div className="flex-1">
+    <Label className="sr-only">Email address</Label>
+    <Input
+      type="email"
+      placeholder="Your email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      className="bg-[#082033] text-[#D6DAC8] placeholder:text-[#D6DAC8]"
+    />
+  </div>
+  <div>
+    <Button
+      type="submit"
+      className="h-12 bg-[#D6DAC8] text-[#002147] h-[40px] w-[109px] hover:bg-[#9CAFAA]"
+    >
+      <Mail className="mr-2 w-4 h-4" /> Subscribe
+    </Button>
+  </div>
+</form>
+
 
             <p className="text-xs text-[#D6DAC8]/70 mt-3">
               We respect your privacy. Unsubscribe anytime.

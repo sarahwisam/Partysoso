@@ -8,7 +8,7 @@ export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="block lg:hidden ">
+    <div className="block lg:hidden">
       
       <button
         onClick={() => setIsOpen(true)}
@@ -19,7 +19,7 @@ export default function Dropdown() {
 
   
       {isOpen && (
-        <div className="fixed inset-0 bg-[#D6DAC8] z-50 flex flex-col ">
+        <div className="fixed inset-0 bg-[#D6DAC8] z-50  flex flex-col ">
       
           <div className="flex justify-end p-4">
             <button onClick={() => setIsOpen(false)} className="text-[#002147] text-3xl">

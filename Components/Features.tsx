@@ -9,18 +9,17 @@ export default function Features() {
         </h2>
 
       
-        <div className="max-md:scale-75 max-md:h-[500px] flex md:grid md:grid-cols-2 lg:grid-cols-3 max-md:-mt-[130px] gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:justify-items-center">
-          <div className="max-md:scale-75 md:min-w-0 snap-center">
-            <FeatureCard
+        <div className="max-md:scale-75 max-md:h-[500px] flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:overflow-visible max-md:-mt-[130px] overflow-x-auto overflow-x-auto snap-x snap-mandatory md:justify-items-center">
+          <div className=" max-md:scale-75 md:min-w-0 snap-center">
+            <FeatureCard 
               image="/s6.jpg"
               title="Easy Booking"
               description="Book your hall in just a few clicks with our seamless interface."
             />
           </div>
-
-          <div className="max-md:scale-75 md:min-w-0 snap-center">
+          <div className=" max-md:scale-75 md:min-w-0 snap-center">
             <FeatureCard
-              image="/s3.jpg"
+              image="/s34.jpg"
               title="Variety of Halls"
               description="Browse a wide range of luxurious halls suitable for all occasions."
             />

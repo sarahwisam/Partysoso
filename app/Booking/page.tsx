@@ -9,6 +9,7 @@ export default function Home() {
 
 <Navbar/>
 <Forms/>
+<div className="max-md:mt-[280px]"></div>
 <Footer/>
     </main>
 

@@ -1,5 +1,5 @@
 import CTA from "Components/CTA";
-import Feature from "Components/Feature";
+import Feature from "Components/Features";
 import Features from "Components/Features";
 import Footer from "Components/Footer";
 import Hero from "Components/Hero";

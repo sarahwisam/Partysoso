@@ -1,0 +1,355 @@
+{
+  "subscriptions": [
+    {
+      "id": "1",
+      "email": "sarah@example.com"
+    },
+    {
+      "id": "2",
+      "email": "sadiq@google.com"
+    },
+    {
+      "id": "3",
+      "email": "Aziz@example.com"
+    },
+    {
+      "id": "4",
+      "email": "naba@example.com"
+    },
+    {
+      "id": "7d81",
+      "email": "test3@example.com"
+    }
+  ],
+  "venues": [
+    {
+      "id": "1",
+      "name": "Royal Palace Hall",
+      "location": "Baghdad, Iraq",
+      "capacity": "300 guests",
+      "price": 500,
+      "image": "/s10.jpg",
+      "type": "wedding"
+    },
+    {
+      "id": "2",
+      "name": "Golden Crown Conference",
+      "location": "Baghdad, Iraq",
+      "capacity": "200 guests",
+      "price": 400,
+      "image": "/s11.jpg",
+      "type": "conference"
+    },
+    {
+      "id": "3",
+      "name": "Sunset Garden Venue",
+      "location": "Baghdad, Iraq",
+      "capacity": "150 guests",
+      "price": 350,
+      "image": "/s12.jpg",
+      "type": "party"
+    },
+    {
+      "id": "4",
+      "name": "Emerald Event Hall",
+      "location": "Baghdad, Iraq",
+      "capacity": "250 guests",
+      "price": 450,
+      "image": "/s13.jpg",
+      "type": "wedding"
+    },
+    {
+      "id": "5",
+      "name": "Diamond Conference Center",
+      "location": "Baghdad, Iraq",
+      "capacity": "400 guests",
+      "price": 600,
+      "image": "/s14.jpg",
+      "type": "conference"
+    },
+    {
+      "id": "6",
+      "name": "Pearl Wedding Hall",
+      "location": "Baghdad, Iraq",
+      "capacity": "350 guests",
+      "price": 550,
+      "image": "/s15.jpg",
+      "type": "wedding"
+    },
+    {
+      "id": "7",
+      "name": "Majestic Banquet",
+      "location": "Baghdad, Iraq",
+      "capacity": "180 guests",
+      "price": 370,
+      "image": "/s16.jpg",
+      "type": "party"
+    },
+    {
+      "id": "8",
+      "name": "Elite Party Venue",
+      "location": "Baghdad, Iraq",
+      "capacity": "220 guests",
+      "price": 420,
+      "image": "/s17.jpg",
+      "type": "party"
+    },
+    {
+      "id": "9",
+      "name": "Grand Horizon Hall",
+      "location": "Baghdad, Iraq",
+      "capacity": "500 guests",
+      "price": 700,
+      "image": "/s18.jpg",
+      "type": "conference"
+    },
+    {
+      "id": "10",
+      "name": "Royal Palace Hall",
+      "location": "Baghdad, Iraq",
+      "capacity": "300 guests",
+      "price": 500,
+      "image": "/s10.jpg",
+      "type": "wedding"
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "name": "Luxury Package 1",
+      "price": 500,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s25.jpg",
+      "category": "wedding"
+    },
+    {
+      "id": "2",
+      "name": "Luxury Package 2",
+      "price": 600,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s26.jpg",
+      "category": "conference"
+    },
+    {
+      "id": "3",
+      "name": "Luxury Package 3",
+      "price": 700,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s27.jpg",
+      "category": "wedding"
+    },
+    {
+      "id": "4",
+      "name": "Luxury Package 4",
+      "price": 800,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s28.jpg",
+      "category": "conference"
+    },
+    {
+      "id": "5",
+      "name": "Luxury Package 5",
+      "price": 900,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s29.jpg",
+      "category": "wedding"
+    },
+    {
+      "id": "6",
+      "name": "Luxury Package 6",
+      "price": 1000,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s30.jpg",
+      "category": "conference"
+    },
+    {
+      "id": "7",
+      "name": "Luxury Package 7",
+      "price": 1100,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s31.jpg",
+      "category": "wedding"
+    },
+    {
+      "id": "8",
+      "name": "Luxury Package 8",
+      "price": 1200,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s32.jpg",
+      "category": "conference"
+    },
+    {
+      "id": "9",
+      "name": "Luxury Package 9",
+      "price": 1300,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s33.jpg",
+      "category": "wedding"
+    },
+    {
+      "id": "10",
+      "name": "Luxury Package 1",
+      "price": 500,
+      "features": [
+        "Decor",
+        "Catering",
+        "Lighting",
+        "Sound System"
+      ],
+      "image": "/s25.jpg",
+      "category": "wedding"
+    }
+  ],
+  "halls": [
+    {
+      "id": "1",
+      "name": "Royal Wedding Hall",
+      "price": 1000,
+      "capacity": "200 guests",
+      "image": "/s34.jpg",
+      "features": [
+        "Stage",
+        "Lighting",
+        "Catering",
+        "Parking"
+      ]
+    }
+  ],
+  "packagess": [
+    {
+      "id": "1",
+      "name": "Luxury Wedding Package",
+      "price": 5000,
+      "image": "/s35.jpg",
+      "features": [
+        "Full Decor",
+        "Premium Catering",
+        "Live Music",
+        "Photography"
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "6635",
+      "fullName": "sarah wissam",
+      "phone": "07848066970",
+      "email": "sarahwisam42@gmail.com",
+      "date": "2003-03-09",
+      "time": "04:15",
+      "notes": "not",
+      "itemType": "package",
+      "itemId": 1
+    },
+    {
+      "id": "554a",
+      "fullName": "",
+      "phone": "",
+      "email": "",
+      "date": "",
+      "time": "",
+      "notes": "",
+      "itemType": "package",
+      "itemId": 1
+    },
+    {
+      "id": "1bb4",
+      "fullName": "naba ali",
+      "phone": "765432112",
+      "email": "test@example.com",
+      "date": "2025-08-31",
+      "time": "03:06",
+      "notes": "",
+      "itemType": "package",
+      "itemId": 1
+    },
+    {
+      "id": "7681",
+      "fullName": "sarah ahmed",
+      "phone": "2468987543",
+      "email": "test2@example",
+      "date": "2025-09-04",
+      "time": "09:47",
+      "notes": "",
+      "itemType": "package",
+      "itemId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "test@example.com",
+      "password": "123456",
+      "name": "Test User"
+    },
+    {
+      "id": "2",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "name": "Admin User"
+    },
+    {
+      "id": "16fa",
+      "name": "ali",
+      "email": "ali12@example.com",
+      "password": "4567"
+    },
+    {
+      "id": "ff5d",
+      "name": "ahmed",
+      "email": "ahmed@example.com",
+      "password": "123"
+    },
+    {
+      "id": "5b72",
+      "name": "sarah wissam",
+      "email": "sarah42@google.com",
+      "password": "1234"
+    }
+  ]
+}

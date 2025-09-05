@@ -14,12 +14,12 @@ export function FeatureCard({
 }) {
   return (
     <Card className="bg-[#D6DAC8] border-[1.5px] border-[#D6DAC8] md:rounded-t-[200px] shadow-md  overflow-hidden w-full max-w-sm h-[550px]">
-      <div className="w-[400px] h-[370px] relative overflow-hidden rounded-t-xl rounded-t-[20px]">
+      <div className="max-md:w-[400px] h-[370px] relative overflow-hidden rounded-t-xl rounded-t-[20px]">
         <Image
           src={image}
           alt={title}
           width={400}
-          height={300}
+          height={400}
           className="object-cover"
         />
       </div>
